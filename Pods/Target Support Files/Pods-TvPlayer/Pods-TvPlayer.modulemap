@@ -1,0 +1,6 @@
+framework module Pods_TvPlayer {
+  umbrella header "Pods-TvPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

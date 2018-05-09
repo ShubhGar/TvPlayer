@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nmz-h5-CgS">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="g8T-so-JcQ">
+            <objects>
+                <navigationController id="nmz-h5-CgS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oQf-Um-gBN">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fZS-Rt-OOP" kind="relationship" relationship="rootViewController" id="s7C-k6-VIz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cst-0W-UJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962" y="-1421"/>
+        </scene>
+        <!--Main Collection View Controller-->
+        <scene sceneID="5zk-qN-kNX">
+            <objects>
+                <collectionViewController storyboardIdentifier="MainCollectionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZS-Rt-OOP" customClass="MainCollectionViewController" customModule="codingTest_tvOS_ShubhamGarg" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" dataMode="prototypes" id="cs3-Ab-H2J">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nje-oD-3UG">
+                            <size key="itemSize" width="1920" height="652"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCollectionViewCell" reuseIdentifier="ImageCollectionViewCell" id="ixI-k5-YrX" customClass="ImageCollectionViewCell" customModule="codingTest_tvOS_ShubhamGarg" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="652"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="1920" height="652"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Full Screen" translatesAutoresizingMaskIntoConstraints="NO" id="iKe-es-5Q6">
+                                            <rect key="frame" x="0.0" y="0.0" width="1920" height="652"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="iKe-es-5Q6" firstAttribute="top" secondItem="ixI-k5-YrX" secondAttribute="top" id="BX6-EJ-2gJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="iKe-es-5Q6" secondAttribute="bottom" id="FUV-J3-PD4"/>
+                                    <constraint firstItem="iKe-es-5Q6" firstAttribute="leading" secondItem="ixI-k5-YrX" secondAttribute="leading" id="JgF-AR-qHp"/>
+                                    <constraint firstAttribute="trailing" secondItem="iKe-es-5Q6" secondAttribute="trailing" id="pEj-gT-fUI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="featuredImage" destination="iKe-es-5Q6" id="Q7K-Id-rtR"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="dEe-BX-rCR">
+                                <rect key="frame" x="59" y="662" width="1802" height="255"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="1802" height="255"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <size key="customSize" width="1802" height="255"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="fZS-Rt-OOP" id="KAO-bE-Hjb"/>
+                            <outlet property="delegate" destination="fZS-Rt-OOP" id="sGs-LL-z5o"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Irf-Ka-cNj"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dee-vH-4hB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640" y="-1464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Full Screen" width="1920" height="1080"/>
+    </resources>
+</document>

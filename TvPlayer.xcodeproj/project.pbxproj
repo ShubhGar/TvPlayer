@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A7BB87103627710BE96E833 /* Pods_TvPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AEFFF20C86FEBDB5246F58 /* Pods_TvPlayer.framework */; };
+		63D3965B49DA8D225663EAB6 /* Pods_codingTest_tvOS_ShubhamGargTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69017EC22897685E76806A1 /* Pods_codingTest_tvOS_ShubhamGargTests.framework */; };
+		747513EF2074ABAB0041B631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747513EE2074ABAB0041B631 /* AppDelegate.swift */; };
+		747513F72074ABAB0041B631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747513F52074ABAB0041B631 /* Main.storyboard */; };
+		747513F92074ABAB0041B631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747513F82074ABAB0041B631 /* Assets.xcassets */; };
+		747514042074ABAC0041B631 /* TvPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747514032074ABAC0041B631 /* TvPlayerTests.swift */; };
+		7475140F2074ABAC0041B631 /* TvPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7475140E2074ABAC0041B631 /* TvPlayerUITests.swift */; };
+		7475141D2074AD850041B631 /* vimeofeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 7475141C2074AD850041B631 /* vimeofeed.json */; };
+		7475141F2074ADBD0041B631 /* video-preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7475141E2074ADBD0041B631 /* video-preview.gif */; };
+		747514212074B0FE0041B631 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747514202074B0FE0041B631 /* AppUtils.swift */; };
+		747514232074B21B0041B631 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747514222074B21B0041B631 /* MainCollectionViewController.swift */; };
+		747514252074B4780041B631 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747514242074B4780041B631 /* ImageCollectionViewCell.swift */; };
+		74F4BB8E2074BFB500A6867D /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F4BB8D2074BFB500A6867D /* PlayerViewController.swift */; };
+		872379310D71B12EBA3461B0 /* Pods_codingTest_tvOS_ShubhamGargUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A3209455E1CCB2E64537C7 /* Pods_codingTest_tvOS_ShubhamGargUITests.framework */; };
+		9FA6CFB1D869A826C6A4585A /* Pods_TvPlayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F8E4ED9105C66D3DA1B207 /* Pods_TvPlayerUITests.framework */; };
+		C3C213D5872D9D0D2B10D750 /* Pods_TvPlayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D3FF2036A46A65567D2285 /* Pods_TvPlayerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		747514002074ABAC0041B631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 747513E32074ABAB0041B631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 747513EA2074ABAB0041B631;
+			remoteInfo = "codingTest-tvOS-ShubhamGarg";
+		};
+		7475140B2074ABAC0041B631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 747513E32074ABAB0041B631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 747513EA2074ABAB0041B631;
+			remoteInfo = "codingTest-tvOS-ShubhamGarg";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A3209455E1CCB2E64537C7 /* Pods_codingTest_tvOS_ShubhamGargUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codingTest_tvOS_ShubhamGargUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		121E34F36343DC6542DC0724 /* Pods-codingTest-tvOS-ShubhamGargTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codingTest-tvOS-ShubhamGargTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codingTest-tvOS-ShubhamGargTests/Pods-codingTest-tvOS-ShubhamGargTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12D3FF2036A46A65567D2285 /* Pods_TvPlayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TvPlayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		187219F3292BE1BC117204A0 /* Pods-codingTest-tvOS-ShubhamGargUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codingTest-tvOS-ShubhamGargUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codingTest-tvOS-ShubhamGargUITests/Pods-codingTest-tvOS-ShubhamGargUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37744150C4DD3125834A1C24 /* Pods-codingTest-tvOS-ShubhamGargTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codingTest-tvOS-ShubhamGargTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-codingTest-tvOS-ShubhamGargTests/Pods-codingTest-tvOS-ShubhamGargTests.release.xcconfig"; sourceTree = "<group>"; };
+		3CCD96DFC3B12E23C3EAC6D2 /* Pods-TvPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TvPlayer/Pods-TvPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		3D59E122BE0292A8887AF59A /* Pods-codingTest-tvOS-ShubhamGarg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codingTest-tvOS-ShubhamGarg.release.xcconfig"; path = "Pods/Target Support Files/Pods-codingTest-tvOS-ShubhamGarg/Pods-codingTest-tvOS-ShubhamGarg.release.xcconfig"; sourceTree = "<group>"; };
+		747513EB2074ABAB0041B631 /* TvPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TvPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		747513EE2074ABAB0041B631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		747513F62074ABAB0041B631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		747513F82074ABAB0041B631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		747513FA2074ABAB0041B631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		747513FF2074ABAC0041B631 /* TvPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TvPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		747514032074ABAC0041B631 /* TvPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvPlayerTests.swift; sourceTree = "<group>"; };
+		747514052074ABAC0041B631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7475140A2074ABAC0041B631 /* TvPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TvPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7475140E2074ABAC0041B631 /* TvPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvPlayerUITests.swift; sourceTree = "<group>"; };
+		747514102074ABAC0041B631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7475141C2074AD850041B631 /* vimeofeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vimeofeed.json; sourceTree = "<group>"; };
+		7475141E2074ADBD0041B631 /* video-preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "video-preview.gif"; sourceTree = "<group>"; };
+		747514202074B0FE0041B631 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		747514222074B21B0041B631 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		747514242074B4780041B631 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		74F4BB8D2074BFB500A6867D /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		83706FAA957CD15F4B8FF504 /* Pods-codingTest-tvOS-ShubhamGarg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codingTest-tvOS-ShubhamGarg.debug.xcconfig"; path = "Pods/Target Support Files/Pods-codingTest-tvOS-ShubhamGarg/Pods-codingTest-tvOS-ShubhamGarg.debug.xcconfig"; sourceTree = "<group>"; };
+		84B410652F393721D2A55521 /* Pods-TvPlayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvPlayerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TvPlayerUITests/Pods-TvPlayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92F8E4ED9105C66D3DA1B207 /* Pods_TvPlayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TvPlayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96333470CCEBB1F939C939D9 /* Pods-TvPlayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvPlayerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TvPlayerTests/Pods-TvPlayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		983DF6D1DE3A9932603BE40E /* Pods-codingTest-tvOS-ShubhamGargUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codingTest-tvOS-ShubhamGargUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-codingTest-tvOS-ShubhamGargUITests/Pods-codingTest-tvOS-ShubhamGargUITests.release.xcconfig"; sourceTree = "<group>"; };
+		99AEFFF20C86FEBDB5246F58 /* Pods_TvPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TvPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D654172EE977442CEBF9E4A9 /* Pods-TvPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TvPlayer/Pods-TvPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		DE440A080F51EE52B994EA50 /* Pods-TvPlayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvPlayerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TvPlayerUITests/Pods-TvPlayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E69017EC22897685E76806A1 /* Pods_codingTest_tvOS_ShubhamGargTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codingTest_tvOS_ShubhamGargTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E363157D3179B4F2DF5E7F /* Pods-TvPlayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TvPlayerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TvPlayerTests/Pods-TvPlayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F154D03B2E909E5F39A9AD0B /* Pods_codingTest_tvOS_ShubhamGarg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_codingTest_tvOS_ShubhamGarg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		747513E82074ABAB0041B631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A7BB87103627710BE96E833 /* Pods_TvPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747513FC2074ABAC0041B631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D3965B49DA8D225663EAB6 /* Pods_codingTest_tvOS_ShubhamGargTests.framework in Frameworks */,
+				C3C213D5872D9D0D2B10D750 /* Pods_TvPlayerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747514072074ABAC0041B631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872379310D71B12EBA3461B0 /* Pods_codingTest_tvOS_ShubhamGargUITests.framework in Frameworks */,
+				9FA6CFB1D869A826C6A4585A /* Pods_TvPlayerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40F251A2B49BC2647995E26B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83706FAA957CD15F4B8FF504 /* Pods-codingTest-tvOS-ShubhamGarg.debug.xcconfig */,
+				3D59E122BE0292A8887AF59A /* Pods-codingTest-tvOS-ShubhamGarg.release.xcconfig */,
+				121E34F36343DC6542DC0724 /* Pods-codingTest-tvOS-ShubhamGargTests.debug.xcconfig */,
+				37744150C4DD3125834A1C24 /* Pods-codingTest-tvOS-ShubhamGargTests.release.xcconfig */,
+				187219F3292BE1BC117204A0 /* Pods-codingTest-tvOS-ShubhamGargUITests.debug.xcconfig */,
+				983DF6D1DE3A9932603BE40E /* Pods-codingTest-tvOS-ShubhamGargUITests.release.xcconfig */,
+				3CCD96DFC3B12E23C3EAC6D2 /* Pods-TvPlayer.debug.xcconfig */,
+				D654172EE977442CEBF9E4A9 /* Pods-TvPlayer.release.xcconfig */,
+				F0E363157D3179B4F2DF5E7F /* Pods-TvPlayerTests.debug.xcconfig */,
+				96333470CCEBB1F939C939D9 /* Pods-TvPlayerTests.release.xcconfig */,
+				DE440A080F51EE52B994EA50 /* Pods-TvPlayerUITests.debug.xcconfig */,
+				84B410652F393721D2A55521 /* Pods-TvPlayerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		747513E22074ABAB0041B631 = {
+			isa = PBXGroup;
+			children = (
+				747513ED2074ABAB0041B631 /* TvPlayer */,
+				747514022074ABAC0041B631 /* TvPlayerTests */,
+				7475140D2074ABAC0041B631 /* TvPlayerUITests */,
+				747513EC2074ABAB0041B631 /* Products */,
+				40F251A2B49BC2647995E26B /* Pods */,
+				F4443B8FAA4FED4BD1A385AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		747513EC2074ABAB0041B631 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				747513EB2074ABAB0041B631 /* TvPlayer.app */,
+				747513FF2074ABAC0041B631 /* TvPlayerTests.xctest */,
+				7475140A2074ABAC0041B631 /* TvPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		747513ED2074ABAB0041B631 /* TvPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				74C410592074C5850043C51D /* utils */,
+				74C410582074C56D0043C51D /* resources */,
+				74C410572074C54C0043C51D /* viewcontrollers */,
+				747513EE2074ABAB0041B631 /* AppDelegate.swift */,
+				747513F52074ABAB0041B631 /* Main.storyboard */,
+				747513F82074ABAB0041B631 /* Assets.xcassets */,
+				747513FA2074ABAB0041B631 /* Info.plist */,
+			);
+			path = TvPlayer;
+			sourceTree = "<group>";
+		};
+		747514022074ABAC0041B631 /* TvPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				747514032074ABAC0041B631 /* TvPlayerTests.swift */,
+				747514052074ABAC0041B631 /* Info.plist */,
+			);
+			path = TvPlayerTests;
+			sourceTree = "<group>";
+		};
+		7475140D2074ABAC0041B631 /* TvPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7475140E2074ABAC0041B631 /* TvPlayerUITests.swift */,
+				747514102074ABAC0041B631 /* Info.plist */,
+			);
+			path = TvPlayerUITests;
+			sourceTree = "<group>";
+		};
+		74C410572074C54C0043C51D /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				747514242074B4780041B631 /* ImageCollectionViewCell.swift */,
+				74F4BB8D2074BFB500A6867D /* PlayerViewController.swift */,
+				747514222074B21B0041B631 /* MainCollectionViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		74C410582074C56D0043C51D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				7475141E2074ADBD0041B631 /* video-preview.gif */,
+				7475141C2074AD850041B631 /* vimeofeed.json */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		74C410592074C5850043C51D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				747514202074B0FE0041B631 /* AppUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F4443B8FAA4FED4BD1A385AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F154D03B2E909E5F39A9AD0B /* Pods_codingTest_tvOS_ShubhamGarg.framework */,
+				E69017EC22897685E76806A1 /* Pods_codingTest_tvOS_ShubhamGargTests.framework */,
+				06A3209455E1CCB2E64537C7 /* Pods_codingTest_tvOS_ShubhamGargUITests.framework */,
+				99AEFFF20C86FEBDB5246F58 /* Pods_TvPlayer.framework */,
+				12D3FF2036A46A65567D2285 /* Pods_TvPlayerTests.framework */,
+				92F8E4ED9105C66D3DA1B207 /* Pods_TvPlayerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		747513EA2074ABAB0041B631 /* TvPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747514132074ABAC0041B631 /* Build configuration list for PBXNativeTarget "TvPlayer" */;
+			buildPhases = (
+				87A8AC69E4C6CD7CC89A00DC /* [CP] Check Pods Manifest.lock */,
+				747513E72074ABAB0041B631 /* Sources */,
+				747513E82074ABAB0041B631 /* Frameworks */,
+				747513E92074ABAB0041B631 /* Resources */,
+				919E8F5F1F68C9222A1A02E1 /* [CP] Embed Pods Frameworks */,
+				846A39F8A2D1919157CFCBF4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TvPlayer;
+			productName = "codingTest-tvOS-ShubhamGarg";
+			productReference = 747513EB2074ABAB0041B631 /* TvPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		747513FE2074ABAC0041B631 /* TvPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747514162074ABAC0041B631 /* Build configuration list for PBXNativeTarget "TvPlayerTests" */;
+			buildPhases = (
+				839CFF55717FDEB2A6224710 /* [CP] Check Pods Manifest.lock */,
+				747513FB2074ABAC0041B631 /* Sources */,
+				747513FC2074ABAC0041B631 /* Frameworks */,
+				747513FD2074ABAC0041B631 /* Resources */,
+				62FF61FDCC32494313E53F0F /* [CP] Embed Pods Frameworks */,
+				8CC145DD0160C582772E8F6C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				747514012074ABAC0041B631 /* PBXTargetDependency */,
+			);
+			name = TvPlayerTests;
+			productName = "codingTest-tvOS-ShubhamGargTests";
+			productReference = 747513FF2074ABAC0041B631 /* TvPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		747514092074ABAC0041B631 /* TvPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 747514192074ABAC0041B631 /* Build configuration list for PBXNativeTarget "TvPlayerUITests" */;
+			buildPhases = (
+				802CAF6F375DF03FD2EEB4E9 /* [CP] Check Pods Manifest.lock */,
+				747514062074ABAC0041B631 /* Sources */,
+				747514072074ABAC0041B631 /* Frameworks */,
+				747514082074ABAC0041B631 /* Resources */,
+				F693B6613F456BCA2BE9A721 /* [CP] Embed Pods Frameworks */,
+				420806506EE806A1409446F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7475140C2074ABAC0041B631 /* PBXTargetDependency */,
+			);
+			name = TvPlayerUITests;
+			productName = "codingTest-tvOS-ShubhamGargUITests";
+			productReference = 7475140A2074ABAC0041B631 /* TvPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		747513E32074ABAB0041B631 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "SHUBHAM GARG";
+				TargetAttributes = {
+					747513EA2074ABAB0041B631 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					747513FE2074ABAC0041B631 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 747513EA2074ABAB0041B631;
+					};
+					747514092074ABAC0041B631 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 747513EA2074ABAB0041B631;
+					};
+				};
+			};
+			buildConfigurationList = 747513E62074ABAB0041B631 /* Build configuration list for PBXProject "TvPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 747513E22074ABAB0041B631;
+			productRefGroup = 747513EC2074ABAB0041B631 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				747513EA2074ABAB0041B631 /* TvPlayer */,
+				747513FE2074ABAC0041B631 /* TvPlayerTests */,
+				747514092074ABAC0041B631 /* TvPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		747513E92074ABAB0041B631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747513F92074ABAB0041B631 /* Assets.xcassets in Resources */,
+				747513F72074ABAB0041B631 /* Main.storyboard in Resources */,
+				7475141D2074AD850041B631 /* vimeofeed.json in Resources */,
+				7475141F2074ADBD0041B631 /* video-preview.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747513FD2074ABAC0041B631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747514082074ABAC0041B631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		420806506EE806A1409446F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvPlayerUITests/Pods-TvPlayerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62FF61FDCC32494313E53F0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvPlayerTests/Pods-TvPlayerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		802CAF6F375DF03FD2EEB4E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TvPlayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		839CFF55717FDEB2A6224710 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TvPlayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		846A39F8A2D1919157CFCBF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvPlayer/Pods-TvPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A8AC69E4C6CD7CC89A00DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TvPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CC145DD0160C582772E8F6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvPlayerTests/Pods-TvPlayerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		919E8F5F1F68C9222A1A02E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TvPlayer/Pods-TvPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvPlayer/Pods-TvPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F693B6613F456BCA2BE9A721 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TvPlayerUITests/Pods-TvPlayerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		747513E72074ABAB0041B631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747514232074B21B0041B631 /* MainCollectionViewController.swift in Sources */,
+				747514252074B4780041B631 /* ImageCollectionViewCell.swift in Sources */,
+				747513EF2074ABAB0041B631 /* AppDelegate.swift in Sources */,
+				747514212074B0FE0041B631 /* AppUtils.swift in Sources */,
+				74F4BB8E2074BFB500A6867D /* PlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747513FB2074ABAC0041B631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				747514042074ABAC0041B631 /* TvPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		747514062074ABAC0041B631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7475140F2074ABAC0041B631 /* TvPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		747514012074ABAC0041B631 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 747513EA2074ABAB0041B631 /* TvPlayer */;
+			targetProxy = 747514002074ABAC0041B631 /* PBXContainerItemProxy */;
+		};
+		7475140C2074ABAC0041B631 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 747513EA2074ABAB0041B631 /* TvPlayer */;
+			targetProxy = 7475140B2074ABAC0041B631 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		747513F52074ABAB0041B631 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				747513F62074ABAB0041B631 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		747514112074ABAC0041B631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		747514122074ABAC0041B631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		747514142074ABAC0041B631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCD96DFC3B12E23C3EAC6D2 /* Pods-TvPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TvPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.TvPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		747514152074ABAC0041B631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D654172EE977442CEBF9E4A9 /* Pods-TvPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TvPlayer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.TvPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		747514172074ABAC0041B631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E363157D3179B4F2DF5E7F /* Pods-TvPlayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TvPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.TvPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TvPlayer.app/TvPlayer";
+			};
+			name = Debug;
+		};
+		747514182074ABAC0041B631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96333470CCEBB1F939C939D9 /* Pods-TvPlayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TvPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.TvPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TvPlayer.app/TvPlayer";
+			};
+			name = Release;
+		};
+		7475141A2074ABAC0041B631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE440A080F51EE52B994EA50 /* Pods-TvPlayerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TvPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.TvPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = TvPlayer;
+			};
+			name = Debug;
+		};
+		7475141B2074ABAC0041B631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B410652F393721D2A55521 /* Pods-TvPlayerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TvPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.TvPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = TvPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		747513E62074ABAB0041B631 /* Build configuration list for PBXProject "TvPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747514112074ABAC0041B631 /* Debug */,
+				747514122074ABAC0041B631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747514132074ABAC0041B631 /* Build configuration list for PBXNativeTarget "TvPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747514142074ABAC0041B631 /* Debug */,
+				747514152074ABAC0041B631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747514162074ABAC0041B631 /* Build configuration list for PBXNativeTarget "TvPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				747514172074ABAC0041B631 /* Debug */,
+				747514182074ABAC0041B631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		747514192074ABAC0041B631 /* Build configuration list for PBXNativeTarget "TvPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7475141A2074ABAC0041B631 /* Debug */,
+				7475141B2074ABAC0041B631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 747513E32074ABAB0041B631 /* Project object */;
+}
